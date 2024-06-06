@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: flower
+
+server:
+  port: 9002
