@@ -1,6 +1,12 @@
 spring:
   application:
     name: fish
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: fish-db
 
 server:
   port: 9001
+
