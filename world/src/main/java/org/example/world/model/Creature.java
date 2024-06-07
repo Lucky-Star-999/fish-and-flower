@@ -11,6 +11,8 @@ import java.util.List;
 public class Creature {
     @Id
     private Long id;
+    private Long typeId; // fishId, flowerId
+    private String type; // fish, flower
     private String name;
     private String description;
     private List<String> imageList;
