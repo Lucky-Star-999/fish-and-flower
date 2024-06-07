@@ -1,6 +1,11 @@
 spring:
   application:
     name: flower
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: flower-db
 
 server:
   port: 9002

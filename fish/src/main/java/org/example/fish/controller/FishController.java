@@ -17,28 +17,28 @@ public class FishController {
     }
 
     @GetMapping
-    public List<Fish> getAllProducts() {
+    public List<Fish> getAll() {
         return fishService.findAll();
     }
 
     @GetMapping("/{id}")
-    public Fish getProductById(@PathVariable Long id) {
+    public Fish getById(@PathVariable Long id) {
         return fishService.findById(id);
     }
 
     @PostMapping
-    public Fish createProduct(@RequestBody Fish fish) {
+    public Fish create(@RequestBody Fish fish) {
         return fishService.save(fish);
     }
 
     @PutMapping("/{id}")
-    public Fish updateProduct(@PathVariable Long id, @RequestBody Fish fish) {
+    public Fish update(@PathVariable Long id, @RequestBody Fish fish) {
         fish.setId(id);
         return fishService.save(fish);
     }
 
     @DeleteMapping("/{id}")
-    public void deleteProduct(@PathVariable Long id) {
+    public void delete(@PathVariable Long id) {
         fishService.deleteById(id);
     }
 }
