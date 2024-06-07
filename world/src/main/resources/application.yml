@@ -1,6 +1,11 @@
 spring:
   application:
     name: world
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: world-db
 
 server:
   port: 9000

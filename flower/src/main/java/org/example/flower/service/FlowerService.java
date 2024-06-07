@@ -23,8 +23,8 @@ public class FlowerService {
         return flowerRepository.findById(id).orElse(null);
     }
 
-    public Flower save(Flower Flower) {
-        return flowerRepository.save(Flower);
+    public Flower save(Flower flower) {
+        return flowerRepository.save(flower);
     }
 
     public void deleteById(Long id) {
